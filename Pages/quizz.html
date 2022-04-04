@@ -7,11 +7,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Welcome Page whith infos about the website</title>
+        <title>Quizz</title>
 
         <!--BOOTSTRAP CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--POPPER JS-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
         <!--BOOTSTRAP JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -19,7 +21,7 @@
 
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Navigation:</a>
+            <img src="../images/logo.png" class="img-fluid navbar-brand mr-3" style="height: 75px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,31 +30,47 @@
                 <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <!--Welcome page with information on why it was created by who and such...-->
-                        <a class="nav-link" href="accueil_infos.html">Accueil</a>
+                        <a class="nav-link h2 mr-3" href="accueil_infos.html">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <!--Page with our research and our project condensed on it-->
-                        <a class="nav-link" href="projet.html">Le Projet</a>
+                        <a class="nav-link h2 mr-3" href="projet.html">Le Projet</a>
                     </li>
                     <li class="nav-item active">
-                        <!--Page with quiz on the project true/false and explication given below ||||| TO CHECK WITH TEAM ||||-->
-                        <a class="nav-link" href="quizz.html">Quiz<span class="sr-only">(current)</span></a>
+                        <!--Page with quiz on the project true/false and explication given below-->
+                        <a class="nav-link h2 mr-3" href="quizz.html">Quiz</a>
                     </li>
                     <li class="nav-item">
                         <!--contact page with where to go for help and with the contact info of the team-->
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link h2" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <main role="main" class="container">
-
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Info</p>
+        <div class="row">
+            <!--invisible-->
+            <div class="col-sm-12 border border-dark" style="height: 91px;"></div>
+            <div class="col-sm-2 bg-secondary fill mh-100">
+                <div class="mt-2 ml-4 mr-2 display-4 mh-100 font-weight-bold text-left">Le Quizz</div>
+                <div class="fixed-bottom" style="height:320px;width:320px;">
+                    <img class="img-fluid" src="../images/plante.png" alt="main image (plant)">
+                </div>
+            </div>
+            
+            <div class="mh-100 col-sm-10 p-0" style = "background-color: #c9c9c9;height:100%;">
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100">
+                    <p class="display-4 mt-4">QUESTION 1?</p>
+                    <button type="button" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden"></div>
+                </div>
+            </div>
         </div>
-
-        </main>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

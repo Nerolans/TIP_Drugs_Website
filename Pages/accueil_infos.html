@@ -7,18 +7,20 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Welcome Page whith infos about the website</title>
+        <title>Accueil</title>
 
         <!--BOOTSTRAP CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--POPPER JS-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
         <!--BOOTSTRAP JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
 
-    <body style="background-color: #DFECE2;">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style = "background-color: #303B24;">
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <img src="../images/logo.png" class="img-fluid navbar-brand mr-3" style="height: 75px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +37,7 @@
                         <a class="nav-link h2 mr-3" href="projet.html">Le Projet</a>
                     </li>
                     <li class="nav-item">
-                        <!--Page with quiz on the project true/false and explication given below ||||| TO CHECK WITH TEAM ||||-->
+                        <!--Page with quiz on the project true/false and explication given below-->
                         <a class="nav-link h2 mr-3" href="quizz.html">Quiz</a>
                     </li>
                     <li class="nav-item">
@@ -46,8 +48,44 @@
             </div>
         </nav>
         <div class="row">
-            <div class="col-sm-2 border border-dark" style="height: 2000px;">gauche</div>
-            <div class="col-sm-10">droite</div>
+            <!--invisible-->
+            <div class="col-sm-12 border border-dark" style="height: 91px;"></div>
+            <div class="col-sm-2 bg-secondary fill mh-100">
+                <div class="mt-2 ml-4 mr-2 display-4 mh-100 font-weight-bold text-left">TIP-Plantes</div>
+                <div class="fixed-bottom" style="height:320px;width:320px;">
+                    <img class="img-fluid" src="../images/plante.png" alt="main image (plant)">
+                </div>
+            </div>
+            
+            <div class="mh-100 col-sm-10" style = "background-color: #c9c9c9;height:100%;">
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100">
+                    <p class="display-4 mt-4">Bienvenue sur notre site.</p>
+                    <p class="col-sm-12 mt-4 h3 text-left">
+                        Ce projet a été réalisé dans le cadre d'un projet TIP dans le but de l'obtention d'une maturité post-CFC.
+                    </p>
+                    <p class="col-sm-12 mt-5 h3 text-left">
+                        Le site se compose de 4 pages:
+
+                        <div class=" mt-4 ml-3 list-group">
+                            <a href="accueil_infos.html" type="button" class="h4 list-group-item list-group-item-action" style="background-color:#e6e6e6;width:210px;" data-toggle="tooltip" data-placement="right" title="Vous êtes sur cette page actuellement.">Accueil</a>
+                            <a href="projet.html" type="button" class="h4 col-sm-2 list-group-item list-group-item-action" style="background-color:#e6e6e6;width:210px;" data-toggle="tooltip" data-placement="right" title="Des information sur le contenu de notre projet (chimie, prévention, médical...).">Le Projet</a>
+                            <a href="quizz.html" type="button" class="h4 col-sm-2 list-group-item list-group-item-action" style="background-color:#e6e6e6;width:210px;" data-toggle="tooltip" data-placement="right" title="Un quizz VRAI / FAUX sur le cannabis et son utilisation avec des explications complémentaires.">Quiz</a>
+                            <a href="contact.html" type="button" class="h4 col-sm-2 list-group-item list-group-item-action" style="background-color:#e6e6e6;width:210px;" data-toggle="tooltip" data-placement="right" title="Une page avec les personnes à contacter en cas de problèmes lié à la drogue ainsi que nos contact personelle si quelqu'un à des questions.">Contact</a> 
+                        </div>
+                        <p class="col-sm-12 mt-1 ml-2 h6 text-left"> (passez le curseur dessus)</p>
+                    </p>
+                    <p class="col-sm-12 mt-5 pt-5 h3 text-left">
+                        Projet réalisé durant l'année scolaire 2021-2022, si vous avez des questions sur les données ou souhaitez nous contacter vis-à-vis du projet, passez par la page <a href="contact.html" >contact</a>.
+                    </p>
+                    <div style="height:218px;"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
