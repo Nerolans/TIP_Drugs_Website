@@ -58,11 +58,23 @@
             </div>
             
             <div class="mh-100 col-sm-10 p-0" style = "background-color: #c9c9c9;height:100%;">
-                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100">
-                    <p class="display-4 mt-4">QUESTION 1?</p>
-                    <button type="button" class="btn btn-secondary btn-lg">Vrai</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Faux</button>
-                    <div class="hidden"></div>
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3">
+                    <p class="display-4 mt-4">Il est légal de consommer du cannabis à moins de 1% de THC en Suisse</p>
+                    <button type="button" id="1Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="1No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="1Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="1Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="1TextInfo" class="mt-2 d-none">
+                            <a class="h2">Les produits cannabiques contenant moins d’1 % de THC sont autorisés. Il peut s’agir de fleurs de chanvre, d’huiles parfumées, de pommades ou de gouttes à avaler.</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,6 +83,30 @@
 
 <script>
     $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').tooltip();
+
+        //Question1
+        $('#1Yes, #1No').click(function() {
+            //Button Color
+            if($("#1Yes").hasClass( "btn-info" )|| $("#1No").hasClass( "btn-info" ))
+            {
+                $('#1Yes').removeClass("btn-info");
+                $("#1No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "1Yes")
+            {
+                $("#1Right").removeClass("d-none");
+                $("#1Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#1Wrong").removeClass("d-none");
+                $("#1Right").addClass("d-none");
+            }
+            $("#1TextInfo").removeClass("d-none");
+        });
     });
 </script>
