@@ -48,7 +48,6 @@
             </div>
         </nav>
         <div class="row">
-            <!--invisible-->
             <div class="col-sm-12 border border-dark" style="height: 91px;"></div>
             <div class="col-sm-2 bg-secondary fill mh-100">
                 <div class="mt-2 ml-4 mr-2 display-4 mh-100 font-weight-bold text-left">Le Quizz</div>
@@ -58,7 +57,8 @@
             </div>
             
             <div class="mh-100 col-sm-10 p-0" style = "background-color: #c9c9c9;height:100%;">
-                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3">
+                <!--Question1-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
                     <p class="display-4 mt-4">Il est légal de consommer du cannabis à moins de 1% de THC en Suisse</p>
                     <button type="button" id="1Yes" class="btn btn-secondary btn-lg">Vrai</button>
                     <button type="button" id="1No" class="btn btn-secondary btn-lg">Faux</button>
@@ -76,6 +76,107 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Question2-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #b9b9b9;height:100%;">
+                    <p class="display-4 pt-4">Posséder du Cannabis pour sa consommation personelle est pénalisable pour n'importe quelle quantité.</p>
+                    <button type="button" id="2Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="2No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="2Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="2Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="2TextInfo" class="mt-2 d-none">
+                            <a class="h2">Depuis 2013, les adultes majeurs peuvent être punis d’une amende d’ordre de 100 francs s’ils consomment du cannabis. En revanche, le fait de posséder jusqu’à 10 grammes maximum de cannabis pour sa propre consommation n'est pas punissable.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question3-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
+                    <p class="display-4 pt-4">Le cannabis est un stupéfiant interdit en Suisse depuis 1951</p>
+                    <button type="button" id="3Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="3No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="3Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="3Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="3TextInfo" class="mt-2 d-none">
+                            <a class="h2">Le cannabis est interdit en Suisse depuis 1951. Il ne peut en principe être ni cultivé, ni produit, ni vendu. La consommation est punie depuis 1975.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question4-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #b9b9b9;height:100%;">
+                    <p class="display-4 pt-4">La consommation de Cannabis chez les jeune de moins de 20 ans est dangereuse</p>
+                    <button type="button" id="4Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="4No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="4Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="4Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="4TextInfo" class="mt-2 d-none">
+                            <a class="h2">Les études montrent que la consommation de cannabis à l'adolescence entraîne des perturbations cognitives, physiologiques et comportementales d'autant plus délétères et persistantes que les consommations sont précoces.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question5-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
+                    <p class="display-4 pt-4">Il y a plus de 5 pays en Europe où ou le cannabis a plus de 1% de THC est légal</p>
+                    <button type="button" id="5Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="5No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="5Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="5Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="5TextInfo" class="mt-2 d-none">
+                            <a class="h2">Il y a seulement 3 pays en Europe où la consommation du cannabis à plus de 1% de THC est légal. Le Portugal, les Pays-Bas et la Suède.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question6-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #b9b9b9;height:100%;">
+                    <p class="display-4 pt-4">la preuve archéologique la plus ancienne de l’utilisation du cannabis date de 2'700 avant J.C</p>
+                    <button type="button" id="6Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="6No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="6Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="6Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="6TextInfo" class="mt-2 d-none">
+                            <a class="h2">En Chine, des archéologues ont mis au jour des tombes contenant des brûleurs en bois. Une analyse a révélé à l'intérieur de ces pots des traces de cannabinoïdes psychoactifs, suggérant qu'à cette époque, les humains "fumaient" déjà du cannabis.</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
@@ -107,6 +208,126 @@
                 $("#1Right").addClass("d-none");
             }
             $("#1TextInfo").removeClass("d-none");
+        });
+
+        //Question2
+        $('#2Yes, #2No').click(function() {
+            //Button Color
+            if($("#2Yes").hasClass( "btn-info" )|| $("#3No").hasClass( "btn-info" ))
+            {
+                $('#2Yes').removeClass("btn-info");
+                $("#2No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "2No")
+            {
+                $("#2Right").removeClass("d-none");
+                $("#2Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#2Wrong").removeClass("d-none");
+                $("#2Right").addClass("d-none");
+            }
+            $("#2TextInfo").removeClass("d-none");
+        });
+
+        //Question3
+        $('#3Yes, #3No').click(function() {
+            //Button Color
+            if($("#3Yes").hasClass( "btn-info" )|| $("#3No").hasClass( "btn-info" ))
+            {
+                $('#3Yes').removeClass("btn-info");
+                $("#3No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "3Yes")
+            {
+                $("#3Right").removeClass("d-none");
+                $("#3Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#3Wrong").removeClass("d-none");
+                $("#3Right").addClass("d-none");
+            }
+            $("#3TextInfo").removeClass("d-none");
+        });
+
+        //Question4
+        $('#4Yes, #4No').click(function() {
+            //Button Color
+            if($("#4Yes").hasClass( "btn-info" )|| $("#4No").hasClass( "btn-info" ))
+            {
+                $('#4Yes').removeClass("btn-info");
+                $("#4No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "4Yes")
+            {
+                $("#4Right").removeClass("d-none");
+                $("#4Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#4Wrong").removeClass("d-none");
+                $("#4Right").addClass("d-none");
+            }
+            $("#4TextInfo").removeClass("d-none");
+        });
+
+        //Question5
+        $('#5Yes, #5No').click(function() {
+            //Button Color
+            if($("#5Yes").hasClass( "btn-info" )|| $("#5No").hasClass( "btn-info" ))
+            {
+                $('#5Yes').removeClass("btn-info");
+                $("#5No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "5No")
+            {
+                $("#5Right").removeClass("d-none");
+                $("#5Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#5Wrong").removeClass("d-none");
+                $("#5Right").addClass("d-none");
+            }
+            $("#5TextInfo").removeClass("d-none");
+        });
+
+        //Question6
+        $('#6Yes, #6No').click(function() {
+            //Button Color
+            if($("#6Yes").hasClass( "btn-info" )|| $("#6No").hasClass( "btn-info" ))
+            {
+                $('#6Yes').removeClass("btn-info");
+                $("#6No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "6Yes")
+            {
+                $("#6Right").removeClass("d-none");
+                $("#6Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#6Wrong").removeClass("d-none");
+                $("#6Right").addClass("d-none");
+            }
+            $("#6TextInfo").removeClass("d-none");
         });
     });
 </script>

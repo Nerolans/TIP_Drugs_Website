@@ -7,11 +7,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Welcome Page whith infos about the website</title>
+        <title>Accueil</title>
 
         <!--BOOTSTRAP CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--POPPER JS-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
         <!--BOOTSTRAP JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -19,7 +21,7 @@
 
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Navigation:</a>
+            <img src="../images/logo.png" class="img-fluid navbar-brand mr-3" style="height: 75px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,31 +30,186 @@
                 <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <!--Welcome page with information on why it was created by who and such...-->
-                        <a class="nav-link" href="accueil_infos.html">Accueil</a>
+                        <a class="nav-link h2 mr-3" href="accueil_infos.html">Accueil<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <!--Page with our research and our project condensed on it-->
-                        <a class="nav-link" href="projet.html">Le Projet<span class="sr-only">(current)</span></a>
+                        <a class="nav-link h2 mr-3" href="projet.html">Le Projet</a>
                     </li>
                     <li class="nav-item">
-                        <!--Page with quiz on the project true/false and explication given below ||||| TO CHECK WITH TEAM ||||-->
-                        <a class="nav-link" href="quizz.html">Quiz</a>
+                        <!--Page with quiz on the project true/false and explication given below-->
+                        <a class="nav-link h2 mr-3" href="quizz.html">Quiz</a>
                     </li>
                     <li class="nav-item">
                         <!--contact page with where to go for help and with the contact info of the team-->
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link h2" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="row">
+            <!--invisible-->
+            <div class="col-sm-12 border border-dark" style="height: 91px;"></div>
+            <div class="col-sm-2 bg-secondary fill mh-100">
+                <div class="mt-2 ml-4 mr-2 display-4 mh-100 font-weight-bold text-left">TIP-Plantes</div>
+                <div class="fixed-bottom" style="height:320px;width:320px;">
+                    <img class="img-fluid" src="../images/plante.png" alt="main image (plant)">
+                </div>
+            </div>
+            
+            <div class="mh-100 col-sm-10" style = "background-color: #c9c9c9;height:100%;">
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 pr-5">
+                    <p class="display-4 ml-1 mt-4">Les bienfaits du cannabis sur la santé</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Le cannabis est utilisé depuis très longtemps pour ses capacités thérapeutiques. Il possède de nombreuses propriétés mais le THC et le CBD n’ont pas les mêmes propriétés thérapeutiques, le THC est un anti-vomitif, anti-nauséeux, anti-spastique et antidouleur. Le CBD lui est aussi antidouleur mais il est aussi anticonvulsif, neurotransmetteur et anxiolytique. Combinés ils présentes des effets analgésiques forts. Utilisé dans le traitement de maladies graves comme la sclérose en plaque ou encore le VIH ou le cancer. Certaines études expérimentales mettent en évidence la possibilité que le cannabis soit anti-cancérigène et pourrait réduire la croissance de cellule tumorales. Le cannabis lutte contre les douleurs chroniques (rhumatismes, migraines), il est aussi prescrit pour lutter contre les insomnies et permet lorsqu’il est associé avec des médicaments traditionnels (opioïdes) de réduire leur quantité nécessaire. Cela a permis de voir le nombre d’overdoses mortelles diminuer dans les états américains qui on légaliser les cannabis par rapport aux autres et la consommation d’antidouleurs traditionnel elle aussi à fortement chuté. Malgré le gros potentiel du cannabis pour le traitement de maladies il y a encore peu de recherches à grandes échelles et la plupart des études se font sur une petite quantité de personnes. Néanmoins, ces résultats sont encourageants et dans les années à venir le nombre d’étude sur ce sujet ne vont qu’augmenter en Suisse et dans le monde.
+                    </p>
+                    <table class="table table-striped mt-4 table-bordered table-dark" style="width:900px;">
+                        <thead>
+                          <tr>
+                            <th scope="col">Effets thérapeutiques</th>
+                            <th scope="col">Traitements et/ou conditions (exemple)</th>
+                            <th scope="col">Type de cannabinoïdes </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Anti-vomitif, anti-nauséeux</td>
+                              <td>Réduction des nausées et vomissements dû à la chimiothérapie.</td>
+                              <td>THC, CBD combiné au THC</td>
+                            </tr>
+                            <tr>
+                                <td>Antipsychotique</td>
+                                <td>Schizophrénie, psychose</td>
+                                <td>CBD haut dosage</td>
+                            </tr>
+                            <tr>
+                                <td>Anxiolytique ; anti-anxieux</td>
+                                <td>Anxiété, syndrome de stress posttraumatique</td>
+                                <td>CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Baisse de la pression oculaire</td>
+                                <td>Glaucome</td>
+                                <td>THC</td>
+                            </tr>
+                            <tr>
+                                <td>Antidouleur, analgésique</td>
+                                <td>Douleurs chroniques d’origine neurogène, rhumatismes, migraines, douleurs liées à des lésions de la colonne, combinaison possible avec des doses réduites d’opioïdes</td>
+                                <td>THC, CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Sédatif</td>
+                                <td>Troubles du sommeil (syndrome des jambes sans repos)</td>
+                                <td>CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Augmentation de l’appétit et amélioration du goût</td>
+                                <td>Inappétence et perte de poids (par exemple en cas de traitement contre le SIDA ou anorexie)</td>
+                                <td>THC, potentiellement CBD </td>
+                            </tr>
+                            <tr>
+                                <td>Myorelaxant, anticonvulsif et antispasmodique</td>
+                                <td>Symptômes de la sclérose en plaques, épilepsie, conséquences de lésions de la colonne, maladie de Parkinson, dystonie</td>
+                                <td>THC, CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Psychoactif</td>
+                                <td>Antidépresseur | Potentiels effets secondaires indésirables (mais diminué par le CBD)</td>
+                                <td>THC (le CBD diminue ces effets)</td>
+                            </tr>
+                            <tr>
+                                <td>Anti-tumeur</td>
+                                <td>Cancer</td>
+                                <td>THC, CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Anti-inflammatoire</td>
+                                <td>Inflammations chroniques, maladie de Crohn, maladie inflammatoire chronique de l'intestin</td>
+                                <td>CBD, THC</td>
+                            </tr>
+                            <tr>
+                                <td>Anti-compulsif</td>
+                                <td>Syndrome de la Tourette, tics</td>
+                                <td>THC, CBD</td>
+                            </tr>
+                            <tr>
+                                <td>Vaso et bronchodilatation</td>
+                                <td>Diminution des symptômes négatifs dans des cas de maladies respiratoires, asthmes</td>
+                                <td>THC</td>
+                            </tr>
+                            <tr>
+                                <td>Diminution des symptômes négatifs dans des cas de maladies respiratoires, asthmes</td>
+                                <td>Protection des cellules nerveuses</td>
+                                <td>THC, CBD</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <main role="main" class="container">
+                    <p class="display-4 ml-1 mt-5 pt-5">Qu'est-ce que je risque au niveau législatif si je me fais prendre en train de consommer ?</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Les adultes qui consomment du cannabis peuvent se voir punir d’une amende de 100.-, mais, posséder jusqu’à 10 grammes de cannabis destiné à sa propre consommation n’est pas punissable. Attention, son commerce est quant à lui est passible de 3 ans de prison.
+                    </p>
 
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Info</p>
+                    <p class="display-4 ml-1 mt-5 pt-5">Comment savoir si je consomme du cannabis à l'excès ? Et qui contacter dans le cas échéant ?</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Il est difficile de dire à quel moment une consommation devient excessive tant les effets du cannabis divergent entre les personnes. Il ne faut pas s’attendre à une escalade brutale, en général, l’abus de substance survient dans le cadre d’un usage régulier lors d’une augmentation de la fréquence des prises.
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        En cas de doute, il existe des questionnaires qui permettent de donner des indications sur sa consommation comme celui-ci :
+                    </p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Avez-vous déjà fumé avant midi ?</p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Avez-vous déjà fumé quand vous êtes seul(e) ?</p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Avez-vous déjà eu des problèmes de mémoire quand vous fumez du cannabis ?</p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Des amis ou des membres de votre famille vous ont-ils déjà dit de réduire votre consommation ?</p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Avez-vous déjà essayé de réduire votre consommation sans y parvenir ?</p>
+                    <p class="col-sm-12 h3 ml-2 text-justify">Avez-vous déjà eu des problèmes à cause de votre consommation (dispute, bagarre, accident, baisse du niveau scolaire) ?</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Deux réponses positives aux questions ci-dessus, dans lesquelles on reconnaîtra les facteurs de gravité d’un usage de cannabis, indiquent que la consommation est effectivement préoccupante et qu’il faut consulter un spécialiste.
+                    </p>
+
+                    <p class="display-4 ml-1 mt-5 pt-5">J'aimerais arrêter. Quels sont les effets de manque auxquels je peux m'attendre ?</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Une dépendance physique n’est observée que chez les gros consommateurs et de façon légère les symptômes de manque seraient : baisse de l’appétit, insomnie, sueurs, tremblement. Et chez les anciens consommateurs (plusieurs années) certains ressentent quelques symptômes de manque lorsqu’ils arrêtent comme : légère anxiété, état dépressif, cauchemars, difficulté à s’endormir, des rêves plus coloré, irritabilité, tremblement, transpiration, nausée, convulsion musculaire et de la nervosité. Ces symptômes peuvent persister quelques jours et seraient surmontables pour une personne qui veut vraiment arrêter.
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        S’il n’engendre normalement pas de dépendance physique chez les fumeurs contrairement à l’alcool ou la cigarette par exemple, le vrai "danger" est une dépendance psychologique. Par-là, on entend que le cannabis répond à un besoin, un sentiment de bien-être, en arrêtant tu vas donc être tendu et angoissé. 
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Si tu as besoin d’aide dans ta démarche tu trouveras des liens utiles dans l’onglet contacte du site.
+                    </p>
+
+                    <p class="display-4 ml-1 mt-5 pt-5">A quoi faut-il faire attention lors de l'achat ? (Mise en garde contre le THC de synthèse)</p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Comme le marché du cannabis n’est pas contrôlé, il peut arriver que le produit que l’on souhaite acheter ne soit pas de bonne qualité ou que ce ne soit même pas le bon produit, il convient donc de bien faire attention lors de l’achat de telles substances.
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Les cannabinoïdes de synthèses sont des molécules qui imitent les effets du THC sur les récepteurs cérébraux. Crée en laboratoire, souvent en Asie, on le trouve aujourd’hui facilement sur le marché noir. Plus dangereux, on le retrouve de plus en plus souvent vendu comme du cannabis ‘’classique’’. Il se présente alors en poudre où il est projeté sur du CBD. Les effets sont beaucoup plus puissants que les effets du cannabis récréatif classique.  
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Pour les consommateurs, les risques sont élevés non seulement des risques de surdose (le cannabis de synthèse peut être jusqu’à 40 fois plus fort) mais aussi Tachycardie, perte de mémoire, hallucinations, etc de façon plus intense. 
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Pour contrer ce problème tu peux aller faire analyser ses substances par des associations tel que nuit blanche à Genève ou night life sur Vaud. 
+                    </p>
+
+                    <p class="display-4 ml-1 mt-5 pt-5">Depuis quand et pourquoi le cannabis est-il utilisé ? </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Le cannabis est une plante très ancienne on en retrouve des traces en chine, en 2700 avant J-C, où il apparait comme sédatif et pour le traitement de l’aliénation mental dans la pharmacopée d’un empereur. En Europe, on retrouve des traces de chanvre dans l’antiquité grecque et romaine ou la plante était principalement utilisée pour ces fibres.
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        Au 19e siècle, le cannabis est l’un des médicaments les plus vendus en Europe et aux Etats-Unis pour ces vertus médicinales. Mais à la fin du siècle le cannabis à moins de succès suite à l’arrivée d’autres médicament comme l’aspirine. Son usage dans la papeterie et dans le tissu est aussi en déclin, le cannabis devient donc presque exclusivement consommé pour ces effets psychoactifs.
+                    </p>
+                    <p class="col-sm-12 mt-4 h3 text-justify">
+                        En 1925, la plupart des pays mondiaux signe la convention internationale de Genève et s’engagent dès lors à se battre contre le trafic de drogue incluant le cannabis. Ce dernier devient donc illégal en Suisse en 1951, il ne peut plus être vendu, cultivé ou produit. En revanche, sa consommation n’est punie qu’en 1975.
+                    </p>
+                </div>
+            </div>
         </div>
-
-        </main>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
