@@ -139,7 +139,7 @@
 
                 <!--Question5-->
                 <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
-                    <p class="display-4 pt-4">Il y a plus de 5 pays en Europe où ou le cannabis a plus de 1% de THC est légal</p>
+                    <p class="display-4 pt-4">Il y a plus de 5 pays en Europe où le cannabis a plus de 1% de THC est légal</p>
                     <button type="button" id="5Yes" class="btn btn-secondary btn-lg">Vrai</button>
                     <button type="button" id="5No" class="btn btn-secondary btn-lg">Faux</button>
                     <div class="hidden mt-4" id="1Text">
@@ -173,6 +173,66 @@
                         </div>
                         <div id="6TextInfo" class="mt-2 d-none">
                             <a class="h2">En Chine, des archéologues ont mis au jour des tombes contenant des brûleurs en bois. Une analyse a révélé à l'intérieur de ces pots des traces de cannabinoïdes psychoactifs, suggérant qu'à cette époque, les humains "fumaient" déjà du cannabis.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question7-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
+                    <p class="display-4 pt-4">La prescription, à des fins médicales, de médicaments non autorisés à base de cannabis est admise à certaines conditions</p>
+                    <button type="button" id="7Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="7No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="7Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="7Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="7TextInfo" class="mt-2 d-none">
+                            <a class="h2">Stupéfiant interdit en Suisse, le cannabis est soumis à une interdiction générale de commercialisation. ll ne peut donc, en principe, être ni cultivé, ni fabriqué, ni importé ou encore remis aux patients. Actuellement, le cannabis à usage médical peut toutefois être utilisé de manière limitée et uniquement avec une autorisation exceptionnelle de l’OFSP.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question8-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #b9b9b9;height:100%;">
+                    <p class="display-4 pt-4">Le cannabis est la substance illégale la plus consommée en Suisse.</p>
+                    <button type="button" id="8Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="8No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="8Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="8Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="8TextInfo" class="mt-2 d-none">
+                            <a class="h2">la consommation de cannabis. Selon les données du rapport, 9,8% de la population helvétique en consomme. C'est moins qu'en Italie (11,9% de la population), mais plus qu'en France (8,5% de la population).</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Question9-->
+                <div class="col-sm-12 ml-0 mr-0 container-fluid w-100 h-100 pb-3" style = "background-color: #c9c9c9;height:100%;">
+                    <p class="display-4 pt-4">Le conseil fédéral n'autorise pas les cantons à réaliser des essais pilotes sur la consommation récréative de cannabis par les adultes</p>
+                    <button type="button" id="9Yes" class="btn btn-secondary btn-lg">Vrai</button>
+                    <button type="button" id="9No" class="btn btn-secondary btn-lg">Faux</button>
+                    <div class="hidden mt-4" id="1Text">
+                        <div id="9Right" class="d-none">
+                            <img src="../images/correct.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 pt-4 text-success">Correct</a>
+                        </div>
+                        <div id="9Wrong" class="d-none">
+                            <img src="../images/wrong.png" class="img-fluid" style="height:50px;" alt="Responsive image">
+                            <a class="h1 danger text-danger">Incorrect</a>
+                        </div>
+                        <div id="9TextInfo" class="mt-2 d-none">
+                            <a class="h2">Depuis le mois de mai, le conseil fédéral autorise les cantons à réaliser des essais pilotes sur la consommation récréative de cannabis par les adultes à travers l'article expérimental de la loi fédérale sur les stupéfiants. Auparavant, l'absence de base légale a empêché des villes comme Zurich de mettre en oeuvre leurs projets, alors même que les premières réflexions des autorités municipales à ce sujet remontent à 2006.</a>
                         </div>
                     </div>
                 </div>
@@ -329,5 +389,79 @@
             }
             $("#6TextInfo").removeClass("d-none");
         });
+
+        //Question7
+        $('#7Yes, #7No').click(function() {
+            //Button Color
+            if($("#7Yes").hasClass( "btn-info" )|| $("#7No").hasClass( "btn-info" ))
+            {
+                $('#7Yes').removeClass("btn-info");
+                $("#7No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "7Yes")
+            {
+                $("#7Right").removeClass("d-none");
+                $("#7Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#7Wrong").removeClass("d-none");
+                $("#7Right").addClass("d-none");
+            }
+            $("#7TextInfo").removeClass("d-none");
+        });
+
+        //Question8
+        $('#8Yes, #8No').click(function() {
+            //Button Color
+            if($("#8Yes").hasClass( "btn-info" )|| $("#8No").hasClass( "btn-info" ))
+            {
+                $('#8Yes').removeClass("btn-info");
+                $("#8No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "8Yes")
+            {
+                $("#8Right").removeClass("d-none");
+                $("#8Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#8Wrong").removeClass("d-none");
+                $("#8Right").addClass("d-none");
+            }
+            $("#8TextInfo").removeClass("d-none");
+        });
+
+        //Question9
+        $('#9Yes, #9No').click(function() {
+            //Button Color
+            if($("#9Yes").hasClass( "btn-info" )|| $("#9No").hasClass( "btn-info" ))
+            {
+                $('#9Yes').removeClass("btn-info");
+                $("#9No").removeClass("btn-info");
+                $(this).addClass("btn-info")
+            }
+            else{ $(this).addClass("btn-info");}
+            //Verificate answer
+            if($(this).attr("id") == "9No")
+            {
+                $("#9Right").removeClass("d-none");
+                $("#9Wrong").addClass("d-none");
+            }
+            else
+            {
+                $("#9Wrong").removeClass("d-none");
+                $("#9Right").addClass("d-none");
+            }
+            $("#9TextInfo").removeClass("d-none");
+        });
+
+        
     });
 </script>
